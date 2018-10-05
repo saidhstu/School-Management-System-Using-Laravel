@@ -1,0 +1,246 @@
+
+* {
+	-moz-box-sizing: border-box;
+}
+body {
+	background: #282828
+}
+
+@font-face {
+    font-family: 'overpassregular';
+    src: url('body font/Overpass_Regular-webfont.eot');
+    src: url('body font/Overpass_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('body font/Overpass_Regular-webfont.woff') format('woff'),
+         url('body font/Overpass_Regular-webfont.ttf') format('truetype'),
+         url('body font/Overpass_Regular-webfont.svg#overpassregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+
+#login {
+	width: 500px;
+	height: auto;
+	background: #2e2e2e;
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-os-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+#error-options {
+	padding-top: 50px;
+	padding-left: 100px;
+}
+
+form {
+	width: 340px;
+	margin: 0 auto 0 50px;
+	text-align: right;
+}
+
+#form-options {
+	position: relative;
+}
+
+label {
+	font-family: 'overpassregular';
+	color: #838183;
+	font-size: 18px;
+
+}
+
+input[type="email"],input[type="password"],input[type="text"] {
+	margin-bottom: 15px;
+	width: 220px;
+	height: 35px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-os-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	background: -moz-linear-gradient(#323232,#373737,#323232,#373737);
+	background: -webkit-linear-gradient(#323232,#373737,#323232,#373737);
+	background: -os-linear-gradient(#323232,#373737,#323232,#373737);
+	background: linear-gradient(#323232,#373737,#323232,#373737);
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5),1px 1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5),1px 1px 1px rgba(0,0,0,0.5);
+	-os-box-shadow: 0px 0px 2px rgba(0,0,0,0.5),1px 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5),1px 1px 1px rgba(0,0,0,0.5);
+	padding: 10px 40px 10px 10px;
+	color: #bbbbbb;
+	font-family: 'overpassregular';
+}
+
+#submit-design {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	-os-border-radius: 70px;
+	border-radius: 70px;
+	background: #2e2e2e;
+	top: 8px;
+	right: -40px;
+}
+
+#submit-inside {
+	width: 55px;
+	height: 55px;
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 55px;
+	-os-border-radius: 55px;
+	border-radius: 55px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 8px;
+	right: 7px;
+	
+}
+
+#go {
+	color: #f0f0f0;
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-os-border-radius: 40px;
+	border-radius: 40px;
+	border: none;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	text-align: center;
+	line-height: 40px;
+	background: -moz-linear-gradient(#00a1d2,#019fce,#029ccb,#0496c2,#078db6,#0986ab,#0983a8,#0a80a3,#0b7ea0,#0c7b9c,#0c7a9a,#00a0d1);
+	background: -webkit-linear-gradient(#00a1d2,#019fce,#029ccb,#0496c2,#078db6,#0986ab,#0983a8,#0a80a3,#0b7ea0,#0c7b9c,#0c7a9a,#00a0d1);
+	background: -os-linear-gradient(#00a1d2,#019fce,#029ccb,#0496c2,#078db6,#0986ab,#0983a8,#0a80a3,#0b7ea0,#0c7b9c,#0c7a9a,#00a0d1);
+	background: linear-gradient(#00a1d2,#019fce,#029ccb,#0496c2,#078db6,#0986ab,#0983a8,#0a80a3,#0b7ea0,#0c7b9c,#0c7a9a,#00a0d1);
+	-moz-transition: all .8s;
+}
+
+#go:hover {
+	background: -moz-linear-gradient(#00a0d1,#0c7a9a,#0c7b9c,#0b7ea0,#0a80a3,#0983a8,#0986ab,#078db6,#0496c2,#029ccb,#019fce,#00a1d2);
+	background: -webkit-linear-gradient(#00a0d1,#0c7a9a,#0c7b9c,#0b7ea0,#0a80a3,#0983a8,#0986ab,#078db6,#0496c2,#029ccb,#019fce,#00a1d2);
+	background: -os-linear-gradient(#00a0d1,#0c7a9a,#0c7b9c,#0b7ea0,#0a80a3,#0983a8,#0986ab,#078db6,#0496c2,#029ccb,#019fce,#00a1d2);
+	background: linear-gradient(#00a0d1,#0c7a9a,#0c7b9c,#0b7ea0,#0a80a3,#0983a8,#0986ab,#078db6,#0496c2,#029ccb,#019fce,#00a1d2);
+}
+
+#dont-go {
+	background: red;
+}
+
+input[type="submit"] {
+	display: none;
+	
+}
+
+#forgot {
+	text-align: left;
+	margin-left: 140px;
+	margin-top: -5px;
+}
+
+form a {
+	color: #1f88b0;
+	font-family: 'overpassregular';
+	font-size: 14px;
+	text-decoration: none;
+}
+
+form a:hover {
+	text-decoration: underline;
+}
+
+/* Eror and Success Section */
+
+
+
+#alert {
+	width: 300px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;	
+	-os-border-radius: 5px;	
+	-o-border-radius: 5px;	
+	border-radius: 5px;	
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-o-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-os-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	margin: 20px 0px;
+	background: #2F4F4F;
+	text-align: center;
+}
+
+#alert ul {
+	list-style: none;
+}
+
+#alert ul li {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#alert img {
+	margin-top: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+#alert p {
+	margin-top: 10px;
+	color: white;
+	font-style: italic;
+	font-family: 'overpassregular';
+}
+
+.error {color: green; margin-left: 20px;}
+
+#form-errors {
+	list-style: none;
+	position: relative;
+}
+
+#form-errors li {
+	margin-bottom: 5px;
+	color: white;
+	float: none;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+#form-errors img {
+	width: 30px;
+	height:30px;
+}
+
+#two {
+	padding-top: 5px;
+	font-family: 'overpassregular';
+}
+
+
+#form-errors li div {
+	margin-right: 10px;
+}
+
+#errors {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-os-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	width: 400px;
+}
+
